@@ -1,4 +1,4 @@
-export default function OverviewTab () : JSX.Element {
+export default function OverviewPage () : JSX.Element {
   return (
     <div>
       OverviewTab
