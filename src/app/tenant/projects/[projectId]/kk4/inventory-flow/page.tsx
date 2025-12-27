@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calculator, CircleCheck, File, FileText } from "lucide-react";
 import OverviewTab from "./components/OverviewTab";
-import SalesTab from "./components/SalesTab";
-import AgingTab from "./components/AgingTab";
+import PphTab from "./components/PphTab";
+import TrendTab from "./components/TrendTab";
 import PpnTab from "./components/PpnTab";
 
 export default function CashFlowPage() {
@@ -19,22 +19,22 @@ export default function CashFlowPage() {
 							Overview
 						</TabsTrigger>
 						<TabsTrigger
-							value="Sales"
+							value="Pph"
 							className="flex-1 gap-2 items-center rounded-2xl"
 						>
-						KK 4.4.1: Arus Uang vs Penjualan
+						KK 4.5.1: Barang vs PPh
 						</TabsTrigger>
 						<TabsTrigger
 							value="Ppn"
 							className="flex-1 gap-2 items-center rounded-2xl"
 						>
-						KK 4.4.2: Arus Uang vs PPN
+						KK 4.5.2: Barang vs PPN
 						</TabsTrigger>
 						<TabsTrigger
-							value="Aging"
+							value="Trend"
 							className="flex-1 gap-2 items-center rounded-2xl"
 						>
-						Aging
+						Trend Analysis
 						</TabsTrigger>
 					</TabsList>
 
@@ -42,16 +42,16 @@ export default function CashFlowPage() {
 						<OverviewTab />
 					</TabsContent>
 
-					<TabsContent value="Sales">
-						<SalesTab />
+					<TabsContent value="Pph">
+						<PphTab />
 					</TabsContent>
 
 					<TabsContent value="Ppn">
 						<PpnTab />
 					</TabsContent>
 
-					<TabsContent value="Aging">
-						<AgingTab />
+					<TabsContent value="Trend">
+						<TrendTab />
 					</TabsContent>
 				</Tabs>
 			</div>
