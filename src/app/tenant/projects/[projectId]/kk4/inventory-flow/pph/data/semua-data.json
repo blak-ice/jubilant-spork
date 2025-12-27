@@ -1,0 +1,58 @@
+{
+  "purchaseVsPph": {
+    "title": "Purchase vs PPh Cross-Reference",
+    "description": "Validating purchases against withholding tax reports",
+    "items": [
+      {
+        "id": 1,
+        "title": "Total Purchases (excl. PPN)",
+        "source": "General Ledger",
+        "value": "Rp 7.450.000.000",
+        "icon": "ShoppingCart"
+      },
+      {
+        "id": 2,
+        "title": "Total DPP PPh 23",
+        "source": "SPT PPh 23",
+        "value": "Rp 850.000.000",
+        "icon": "ShoppingCart"
+      },
+      {
+        "id": 3,
+        "title": "Total DPP PPh 22",
+        "source": "SPT PPh 22",
+        "value": "Rp 320.000.000",
+        "icon": "ShoppingCart"
+      },
+      {
+        "id": 4,
+        "title": "Other Purchases",
+        "source": "GL Analysis",
+        "value": "Rp 6.280.000.000",
+        "icon": "ShoppingCart"
+      }
+    ],
+    "reconciliation": {
+      "title": "Reconciliation",
+      "value": "Rp 7.450.000.000",
+      "message": "Matches total purchases from GL",
+      "status": "matched"
+    }
+  },
+  "coverage": [
+    {
+      "id": 1,
+      "title": "PPh 23 Coverage",
+      "percentage": 11.4,
+      "description": "Of total purchases subject to PPh 23",
+      "color": "#1890FF"
+    },
+    {
+      "id": 2,
+      "title": "PPh 22 Coverage",
+      "percentage": 4.3,
+      "description": "Of total purchases subject to PPh 22",
+      "color": "#52C41A"
+    }
+  ]
+}
