@@ -1,4 +1,4 @@
-export default function TrendTab () : JSX.Element {
+export default function TrendPage () : JSX.Element {
   return (
     <div>
       TrendTab

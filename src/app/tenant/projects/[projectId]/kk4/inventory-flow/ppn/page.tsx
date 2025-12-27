@@ -1,8 +1,7 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import SemuaTab from "./components/SemuaTab";
-import Pph23Tab from "./components/Pph23Tab";
-import Pph22Tab from "./components/Pph22Tab";
+import OverviewTab from "./components/OverviewTab";
+import CreditedTab from "./components/CreditedTab";
+import NotCreditedTab from "./components/NotCreditedTab";
 import VarianceTab from "./components/VarianceTab";
 
 
@@ -10,25 +9,25 @@ export default function PphPage() {
 	return (
 		<div className="flex flex-col gap-[30px]">
 			<div className="space-y-8 rounded-2xl  p-6">
-				<Tabs defaultValue="Semua" className="w-full">
+				<Tabs defaultValue="Overview" className="w-full">
 					<TabsList className="w-full rounded-2xl bg-gray-200">
 						<TabsTrigger
-							value="Semua"
+							value="Overview"
 							className="flex-1 gap-2 items-center rounded-2xl"
 						>
-							Semua
+							Overview
 						</TabsTrigger>
 						<TabsTrigger
-							value="pph23"
+							value="Credited"
 							className="flex-1 gap-2 items-center rounded-2xl"
 						>
-							pph23
+							Credited
 						</TabsTrigger>
 						<TabsTrigger
-							value="pph22"
+							value="NotCredited"
 							className="flex-1 gap-2 items-center rounded-2xl"
 						>
-							pph22
+							Not Credited
 						</TabsTrigger>
 						<TabsTrigger
 							value="variance"
@@ -38,16 +37,16 @@ export default function PphPage() {
 						</TabsTrigger>
 					</TabsList>
 
-					<TabsContent value="Semua">
-						<SemuaTab />
+					<TabsContent value="Overview">
+						<OverviewTab />
 					</TabsContent>
 
-					<TabsContent value="pph23">
-						<Pph23Tab />
+					<TabsContent value="Credited">
+						<CreditedTab />
 					</TabsContent>
 
-					<TabsContent value="pph22">
-						<Pph22Tab />
+					<TabsContent value="NotCredited">
+						<NotCreditedTab />
 					</TabsContent>
 
 					<TabsContent value="variance">
